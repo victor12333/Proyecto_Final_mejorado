@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Buen Precio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: false, 
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            });
+        });
+        
+        function openAndCloseNewTab(url) {
+            var newTab = window.open(url, '_blank');
+            window.close();
+            newTab.focus();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/banner.jpg" alt="Banner Principal" class="banner-image">
+        </div>
+        <img src="img/logo.png" alt="Logo El Buen Precio" class="logo">
+        <h1>El Buen Precio</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="openAndCloseNewTab('servicios.html')">Servicios</a></li>
+                <li><a href="javascript:void(0);" onclick="openAndCloseNewTab('productos.html')">Productos</a></li>
+                <li><a href="javascript:void(0);" onclick="openAndCloseNewTab('ubicacion.html')">Ubícanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="centered-section">
+            <h2>Nosotros</h2>
+            <div class="carousel">
+                <div><img src="img/nosotros1.jpg" alt="Nosotros 1" class="carousel-image"></div>
+                <div><img src="img/nosotros2.jpg" alt="Nosotros 2" class="carousel-image"></div>
+                <div><img src="img/nosotros3.jpeg" alt="Nosotros 3" class="carousel-image"></div>
+            </div>
+            <p>En "El Buen Precio", nos dedicamos a ofrecer productos de alta calidad a precios competitivos. Como una empresa líder en el sector de bodegas, nos enorgullece proporcionar un servicio excepcional y una amplia variedad de productos que satisfacen las necesidades de nuestros clientes. Nuestro compromiso con la excelencia y la atención al cliente nos distingue en el mercado, asegurando siempre la mejor experiencia de compra.</p>
+        </section>
+        <section id="contact" class="centered-section">
+            <h2>Contacto</h2>
+            <p>Para cualquier consulta o información adicional, puedes contactarnos a través de los siguientes medios:</p>
+            <ul class="no-bullets">
+                <li><strong>Teléfono:</strong> 987568156</li>
+                <li><strong>Correo Electrónico:</strong> <a href="mailto:elbuenprecio@gmail.com">elbuenprecio@gmail.com</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 El Buen Precio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
